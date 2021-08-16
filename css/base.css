@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0px 148px 0 148px;
+  color: #111111;
+  background-color: #f8f8f8;
+  margin: 0;
+  width: calc(100vw - 148px - 148px);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Knewave", cursive;
+}
+
+h1 {
+  font-size: 136;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 3px solid #f8f8f8;
+  color: #111111;
+}
+
+a:visited {
+  color: #111111;
+}
+
+a.white:visited {
+  color: #f8f8f8;
+}
+
+h1.home {
+  font-size: 64px;
+  margin: 0px;
+  line-height: 125%;
+}
+h1.home .letter {
+  display: inline-block;
+  /* transition: all 300ms ease; */
+}
+
+.subtitle {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 12px;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.white {
+  color: #f8f8f8;
+}
+
+.center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  h1.home {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+}
+section {
+  margin: 100px 0;
+  max-width: 100vw;
+}
+
+.hero {
+  max-width: 450px;
+  margin-bottom: 92px;
+}
+
+.banner {
+  transform: rotate(-4deg);
+  margin: 52px -148px;
+  background-color: #667EFF;
+  padding: 36px 148px;
+}
+
+.logistics {
+  margin-left: 48px;
+  padding: 44px;
+  min-width: 240px;
+  background-image: url("/assets/border1.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 36px;
+  background-size: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.flex-item {
+  flex: 1;
+  margin-right: 24px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  margin-bottom: 48px;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-top: 24px;
+  font-family: "Knewave", cursive;
+}
+nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+nav ul li {
+  margin-left: 28px;
+  font-size: 18px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 72px;
+  margin-bottom: 24px;
+  font-family: "Knewave", cursive;
+  text-align: center;
+}
+footer .quote {
+  max-width: 600px;
+  color: #FFD600;
+  font-size: 24px;
+}
+footer .copywrite {
+  font-size: 12px;
+  margin-top: 56px;
+}
+
+.gridlines {
+  position: fixed;
+  top: -100px;
+  left: 148px;
+  width: calc(100vw - 148px - 148px);
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gridlines .line {
+  margin-top: -50px;
+  height: calc(100vh + 200px);
+  width: 2px;
+  background-color: #ebebeb;
+}
+
+@media only screen and (max-width: 1280px) {
+  .line {
+    display: none;
+  }
+
+  .line:nth-child(-n+8) {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0 36px 0 36px;
+    width: calc(100vw - 36px - 36px);
+  }
+
+  .banner {
+    margin: 52px -36px;
+    background-color: #667EFF;
+    padding: 36px 36px;
+  }
+
+  .gridlines {
+    left: 36px;
+    width: calc(100vw - 36px - 36px);
+  }
+  .gridlines .line {
+    display: none;
+  }
+  .gridlines .line:nth-child(-n+8) {
+    display: none;
+  }
+  .gridlines .line:nth-child(-n+4) {
+    display: block;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  section {
+    margin: 64px 0;
+  }
+}
+
+/*# sourceMappingURL=base.css.map */
