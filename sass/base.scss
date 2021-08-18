@@ -25,11 +25,11 @@ body{
 // TYPOGRAPHY
 
 h1, h2, h3, h4{
-    font-family: 'Knewave', cursive;
+    font-family: 'Knewave', Sans-Serif;
 }
 
 h1{
-    font-size: 136;
+    font-size: 92px;
 }
 
 h2{
@@ -42,17 +42,25 @@ h3{
 
 h4{
     font-size: 18px;
+    margin: 8px 0;
+}
+
+.primary-color{
+    color: $primary-color;
 }
 
 p, li{
     font-size: 16px;
     line-height: 150%;
+    margin: 4px 0;
 }
 
 a{
-    text-decoration: none;
-    border-bottom: 3px solid $white;
     color: $black;
+}
+
+a.white{
+    color: $white;
 }
 
 a:visited{
@@ -94,6 +102,15 @@ h1.home{
     text-align: center;
 }
 
+.faq{
+    h4{
+        margin-bottom: 0;
+    }
+    p{
+        margin-top: 6px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     h1.home{
         font-size:42px;
@@ -114,22 +131,26 @@ section{
 }
 
 .hero{
-    max-width: 450px;
     margin-bottom: 92px;
 }
 
+.hero.half{
+    max-width: 450px;
+}
+
 .banner{
-    transform: rotate(-4deg);
+    transform: rotate(-4deg) translateX(-10px);
     margin: 52px (-$padding-large);
     background-color: $primary-color;
     padding: 36px $padding-large;
+    width: calc(100% + 10px);
 }
 
 .logistics{
     margin-left: 48px;
     padding: 44px;
     min-width: 240px;
-    background-image: url("/assets/border1.svg");
+    background-image: url("/assets/border0.svg");
     background-repeat: no-repeat;
     background-position: 0px 36px;
     background-size: 100%;
@@ -143,6 +164,10 @@ section{
 
 .row{
     flex-direction: row;
+}
+
+.h-center{
+    align-items: center;
 }
 
 .flex-item{
@@ -166,10 +191,58 @@ nav{
         list-style-type: none;
         justify-content: flex-end;
         li{
-            margin-left: 28px;
             font-size: 18px;
+            padding:26px;
+            a{
+                text-decoration: none;
+            }
+        }
+        .active{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+        .active-1{
+            background-image: url("/assets/border1.svg");
+        }
+        .active-2{
+            background-image: url("/assets/border2.svg");
+        }
+        .active-3{
+            background-image: url("/assets/border3.svg");
+        }
+        .active-4{
+            background-image: url("/assets/border4.svg");
+        }
+        .active-5{
+            background-image: url("/assets/border5.svg");
         }
     }
+}
+
+// Images
+img{
+    max-width: calc(100vw - #{$padding-large} - #{$padding-large});
+}
+
+// Buttons
+.blob-button{
+    width: fit-content;
+    margin-left: 24px;
+    padding:56px;
+    background-image: url("/assets/blob1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: fit-content;
+    a{
+        text-decoration: none;
+    }
+}
+
+// Utilities
+.mt2{
+    margin-top: 24px;
 }
 
 // Footer
@@ -226,7 +299,7 @@ footer{
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body{
         padding: 0 $padding-small 0 $padding-small;
         width: calc(100vw - #{$padding-small} - #{$padding-small});
@@ -255,5 +328,8 @@ footer{
     }
     section{
         margin: 64px 0;
+    }
+    img{
+        max-width: calc(100vw - #{$padding-small} - #{$padding-small});
     }
 }

@@ -13,11 +13,11 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Knewave", cursive;
+  font-family: "Knewave", Sans-Serif;
 }
 
 h1 {
-  font-size: 136;
+  font-size: 92px;
 }
 
 h2 {
@@ -30,17 +30,25 @@ h3 {
 
 h4 {
   font-size: 18px;
+  margin: 8px 0;
+}
+
+.primary-color {
+  color: #667EFF;
 }
 
 p, li {
   font-size: 16px;
   line-height: 150%;
+  margin: 4px 0;
 }
 
 a {
-  text-decoration: none;
-  border-bottom: 3px solid #f8f8f8;
   color: #111111;
+}
+
+a.white {
+  color: #f8f8f8;
 }
 
 a:visited {
@@ -82,6 +90,13 @@ h1.home .letter {
   text-align: center;
 }
 
+.faq h4 {
+  margin-bottom: 0;
+}
+.faq p {
+  margin-top: 6px;
+}
+
 @media only screen and (max-width: 600px) {
   h1.home {
     font-size: 42px;
@@ -101,22 +116,26 @@ section {
 }
 
 .hero {
-  max-width: 450px;
   margin-bottom: 92px;
 }
 
+.hero.half {
+  max-width: 450px;
+}
+
 .banner {
-  transform: rotate(-4deg);
+  transform: rotate(-4deg) translateX(-10px);
   margin: 52px -148px;
   background-color: #667EFF;
   padding: 36px 148px;
+  width: calc(100% + 10px);
 }
 
 .logistics {
   margin-left: 48px;
   padding: 44px;
   min-width: 240px;
-  background-image: url("/assets/border1.svg");
+  background-image: url("/assets/border0.svg");
   background-repeat: no-repeat;
   background-position: 0px 36px;
   background-size: 100%;
@@ -128,6 +147,10 @@ section {
 
 .row {
   flex-direction: row;
+}
+
+.h-center {
+  align-items: center;
 }
 
 .flex-item {
@@ -152,8 +175,53 @@ nav ul {
   justify-content: flex-end;
 }
 nav ul li {
-  margin-left: 28px;
   font-size: 18px;
+  padding: 26px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul .active {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+nav ul .active-1 {
+  background-image: url("/assets/border1.svg");
+}
+nav ul .active-2 {
+  background-image: url("/assets/border2.svg");
+}
+nav ul .active-3 {
+  background-image: url("/assets/border3.svg");
+}
+nav ul .active-4 {
+  background-image: url("/assets/border4.svg");
+}
+nav ul .active-5 {
+  background-image: url("/assets/border5.svg");
+}
+
+img {
+  max-width: calc(100vw - 148px - 148px);
+}
+
+.blob-button {
+  width: fit-content;
+  margin-left: 24px;
+  padding: 56px;
+  background-image: url("/assets/blob1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: fit-content;
+}
+.blob-button a {
+  text-decoration: none;
+}
+
+.mt2 {
+  margin-top: 24px;
 }
 
 footer {
@@ -203,7 +271,7 @@ footer .copywrite {
     display: block;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body {
     padding: 0 36px 0 36px;
     width: calc(100vw - 36px - 36px);
@@ -235,6 +303,10 @@ footer .copywrite {
 
   section {
     margin: 64px 0;
+  }
+
+  img {
+    max-width: calc(100vw - 36px - 36px);
   }
 }
 
