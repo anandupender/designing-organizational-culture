@@ -112,6 +112,9 @@ h1.home{
 }
 
 @media only screen and (max-width: 600px) {
+    h1{
+        font-size: 48px;
+    }
     h1.home{
         font-size:42px;
     }
@@ -179,10 +182,9 @@ section{
 nav{
     width: 100%;
     display: flex;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
     justify-content: flex-end;
     flex-direction: row;
-    margin-top: 24px;
     font-family: 'Knewave', cursive;
     ul{
         padding: 0;
@@ -331,5 +333,13 @@ footer{
     }
     img{
         max-width: calc(100vw - #{$padding-small} - #{$padding-small});
+    }
+    nav{
+        ul{
+            flex-wrap: wrap;
+            li{
+                padding: 12px;
+            }
+        }
     }
 }
