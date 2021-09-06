@@ -159,7 +159,22 @@ section {
 
 .flex-item {
   flex: 1;
-  margin-right: 24px;
+  margin-right: 42px;
+}
+
+.flex-item:last-child {
+  margin-right: 0;
+}
+
+.week {
+  margin-bottom: 64px;
+}
+
+.module-section {
+  background-color: #667EFF;
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 0px 18px;
 }
 
 nav {
