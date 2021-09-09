@@ -1,7 +1,4 @@
-ToDo
+Done
 * add favicons
 * add SEO stuff
-* add analytics?
-* buy and setup domain
-
-Done
+* add analytics
