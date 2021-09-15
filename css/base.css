@@ -103,7 +103,7 @@ h1.home .letter {
   }
 
   h1.home {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   h2 {
@@ -302,7 +302,7 @@ footer .copywrite {
   .banner {
     margin: 52px -36px;
     background-color: #667EFF;
-    padding: 36px 36px;
+    padding: 36px 44px;
   }
 
   .gridlines {
@@ -335,7 +335,8 @@ footer .copywrite {
     flex-wrap: wrap;
   }
   nav ul li {
-    padding: 12px;
+    padding: 10px;
+    font-size: 14px;
   }
 }
 

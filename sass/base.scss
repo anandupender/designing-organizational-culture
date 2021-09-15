@@ -116,7 +116,7 @@ h1.home{
         font-size: 48px;
     }
     h1.home{
-        font-size:42px;
+        font-size:40px;
     }
     h2{
         font-size: 24px;
@@ -328,7 +328,7 @@ footer{
     .banner{
         margin: 52px (-$padding-small);
         background-color: $primary-color;
-        padding: 36px $padding-small;
+        padding: 36px 44px;
     }
     .gridlines{
         left:$padding-small;
@@ -357,7 +357,8 @@ footer{
         ul{
             flex-wrap: wrap;
             li{
-                padding: 12px;
+                padding: 10px;
+                font-size: 14px;
             }
         }
     }
