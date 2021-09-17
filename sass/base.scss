@@ -167,6 +167,7 @@ section{
 
 .row{
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .col{
@@ -246,6 +247,11 @@ img{
     max-width: calc(100vw - #{$padding-large} - #{$padding-large});
 }
 
+img.small{
+    width:100%;
+    object-fit: cover;
+}
+
 // Buttons
 .blob-button{
     width: fit-content;
@@ -259,6 +265,10 @@ img{
     a{
         text-decoration: none;
     }
+}
+
+.guest-speaker{
+    margin-bottom: 48px;
 }
 
 // Utilities
