@@ -319,7 +319,12 @@ footer{
         height: calc(100vh + 200px);
         width:2px;
         background-color: $light-gray;
-        // margin-right: 76px;
+        transition: background-color 100ms ease;
+        padding: 0 4px;
+        background-clip: content-box;
+    }
+    .line:hover{
+        background-color: $secondary-color;
     }
 
 }
