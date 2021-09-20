@@ -253,10 +253,12 @@ img{
 img.small{
     width:100%;
     object-fit: cover;
+    border: 2px $black solid;
 }
 
 // Buttons
 .blob-button{
+    display: block;
     width: fit-content;
     margin-left: 24px;
     padding:56px;
@@ -265,9 +267,17 @@ img.small{
     background-position: center;
     background-size: 70%;
     height: fit-content;
+    transition: transform 600ms linear;
+    text-decoration: none;
     a{
         text-decoration: none;
     }
+}
+
+.blob-button:hover{
+    transform: rotate(360deg);
+    transition: transform 20s linear;
+
 }
 
 .guest-speaker{
@@ -275,6 +285,9 @@ img.small{
 }
 
 // Utilities
+.mt1{
+    margin-top: 8vh;
+}
 .mt2{
     margin-top: 24px;
 }

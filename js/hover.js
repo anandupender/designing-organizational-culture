@@ -1,4 +1,4 @@
-const colors = ["#ffbe0b","#fb5607","#ff006e","#667EFF"];
+const colors = ["#667EFF","#FFD600"];
 
 let words = "Designing Organizational Culture";
 let container = document.querySelector("#hover-fun");
