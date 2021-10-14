@@ -191,7 +191,18 @@ section{
 }
 
 .week{
+    position: relative;
     margin-bottom: 64px;
+}
+
+.week-number{
+    color: $primary-color;
+    position: absolute;
+    left:-90px;
+    top:48px;
+    transform: rotate(-90deg);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 28px;
 }
 
 .module-section{
@@ -398,5 +409,9 @@ footer{
                 font-size: 14px;
             }
         }
+    }
+    .week-number{
+        left: -60px;
+        font-size: 22px;
     }
 }
